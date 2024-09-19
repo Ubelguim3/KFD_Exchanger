@@ -30,7 +30,6 @@ while True:
                         currencies[k] += currencies[k] / 100*randint(0,5)
                     print('Обмен произведён')
                 break
-
             if char == '2':
                 print('введите кол-во EUR:')
                 count_eur = float(input())
