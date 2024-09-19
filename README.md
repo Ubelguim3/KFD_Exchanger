@@ -1,4 +1,4 @@
-# Обменник валют
+
 
 from random import randint
  
