@@ -1,13 +1,15 @@
 # Обменник валют
 
+
 from random import randint
  
+
+
 user_cash = {'rub': 1000000, 'usd' : 0, 'usdt' : 0, 'eur' : 0, 'btc' : 0}
 terminal_cash = {'rub': 10000, 'usd' : 1000, 'usdt' : 1000, 'eur' : 1000, 'btc' : 1.5}
 currencies = {'rub/usd' : 90, 'rub/eur' : 104, 'usd/eur' : 1.11, 'usd/usdt' : 1, 'usd/btc': 60496 }
 
 while True:
-
     print('выберите команду:\n (a) посмотреть Ваш баланс\n (b) посмотреть средства терминала  \n (c) обменять валюты \n (d) посмотреть курс валют \n (e) выход')
     
     command = input()
