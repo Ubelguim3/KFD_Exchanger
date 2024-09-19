@@ -5,6 +5,7 @@ from random import randint
 user_cash = {'rub': 1000000, 'usd' : 0, 'usdt' : 0, 'eur' : 0, 'btc' : 0}
 terminal_cash = {'rub': 10000, 'usd' : 1000, 'usdt' : 1000, 'eur' : 1000, 'btc' : 1.5}
 currencies = {'rub/usd' : 90, 'rub/eur' : 104, 'usd/eur' : 1.11, 'usd/usdt' : 1, 'usd/btc': 60496 }
+
 while True:
     print('выберите команду:\n (a) посмотреть Ваш баланс\n (b) посмотреть средства терминала  \n (c) обменять валюты \n (d) посмотреть курс валют \n (e) выход')
     command = input()
@@ -18,6 +19,7 @@ while True:
          while True:
             print('выберите валютную пару: \n (1) rub/usd \n (2) rub/eur \n (3) usd/eur \n (4) usd/usdt \n (5) usd/btc \n (6) Выход')
             char = input()
+            
             if char == '1':
                 print('введите кол-во USD:')
                 count_usd = float(input())
@@ -31,6 +33,7 @@ while True:
                         currencies[k] += currencies[k] / 100*randint(0,5)
                     print('Обмен произведён')
                 break
+                
             if char == '2':
                 print('введите кол-во EUR:')
                 count_eur = float(input())
@@ -44,6 +47,7 @@ while True:
                         currencies[k] += currencies[k] / 100*randint(0,5)
                     print('Обмен произведён')
                 break
+                
             if char == '3':
                 print('введите кол-во eur:')
                 count_eur = float(input())
