@@ -1,4 +1,5 @@
 # Обменник валют
+
 from random import randint
  
 user_cash = {'rub': 1000000, 'usd' : 0, 'usdt' : 0, 'eur' : 0, 'btc' : 0}
@@ -43,7 +44,6 @@ while True:
                         currencies[k] += currencies[k] / 100*randint(0,5)
                     print('Обмен произведён')
                 break
-
             if char == '3':
                 print('введите кол-во eur:')
                 count_eur = float(input())
